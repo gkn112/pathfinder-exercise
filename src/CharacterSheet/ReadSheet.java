@@ -126,16 +126,16 @@ public class ReadSheet extends MainClass{
                 int chaVal = (int) sheet.getRow(9).getCell(1).getNumericCellValue();
 
 
-                name = nameVal;
-                clss = classVal;
-                level = lvlVal;
-                race = raceVal;
-                str = strVal;
-                dex = dexVal;
-                con = conVal;
-                intl = intVal;
-                wis = wisVal;
-                cha = chaVal;
+//                name = nameVal;
+//                clss = classVal;
+//                level = lvlVal;
+//                race = raceVal;
+//                str = strVal;
+//                dex = dexVal;
+//                con = conVal;
+//                intl = intVal;
+//                wis = wisVal;
+//                cha = chaVal;
 
 
             } catch (Exception e) {

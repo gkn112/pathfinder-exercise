@@ -11,6 +11,12 @@
 <?import javafx.scene.text.TextFlow?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<?import CharacterSheet.Character?>
+<?import CharacterSheet.ReadSheet?>
+
+
 <AnchorPane prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
@@ -30,10 +36,21 @@
                                  <children>
                                     <TableView layoutX="160.0" layoutY="14.0" prefHeight="195.0" prefWidth="227.0">
                                       <columns>
-                                        <TableColumn prefWidth="65.0" text="Ability" />
+                                        <TableColumn prefWidth="65.0" text="Ability">
+                                          <cellValueFactory><PropertyValueFactory property="str" />
+                                          </cellValueFactory>
+                                        </TableColumn>
                                         <TableColumn prefWidth="85.0" text="Score" />
                                           <TableColumn prefWidth="75.0" text="Modifier" />
                                       </columns>
+                                        <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <ReadSheet str="15" />
+                                            </FXCollections>
+                                        </items>
+
+
+
                                     </TableView>
                                     <AnchorPane layoutX="10.0" layoutY="219.0" prefHeight="88.0" prefWidth="382.0" >
                                         <Text fx:id="rightText" />

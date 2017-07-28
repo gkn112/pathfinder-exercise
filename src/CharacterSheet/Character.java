@@ -3,15 +3,15 @@ package CharacterSheet;
  * Created by gkn on 25.07.2017.
  */
 
-
+import CharacterSheet.ReadSheet;
 public class Character extends MainClass{
 
-    public Character(String filename) {
+    public Character() {
 
-        ReadSheet c1 = new ReadSheet(filename);
+        //ReadSheet c1 = new ReadSheet(filename);
 
 
-        String name = c1.getName();
+        String name = s
         int level = c1.level;
         String race = c1.race;
         String clss = c1.clss;
