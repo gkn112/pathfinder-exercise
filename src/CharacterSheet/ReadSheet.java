@@ -11,7 +11,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 
-public class ReadSheet extends MainClass{
+public class ReadSheet{
 
     public String name,clss,race;
     public int level,str,dex,con,intl,wis,cha;
@@ -24,6 +24,44 @@ public class ReadSheet extends MainClass{
         }
     }
 
+
+
+    public String getClss() {
+        return clss;
+    }
+
+    public String getRace() {
+        return race;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public int getStr() {
+        return str;
+    }
+
+    public int getDex() {
+        return dex;
+    }
+
+    public int getCon() {
+        return con;
+    }
+
+    public int getIntl() {
+        return intl;
+    }
+
+    public int getWis() {
+        return wis;
+    }
+
+    public int getCha() {
+        return cha;
+    }
+
     public String getName() {
         return name;
     }
@@ -32,72 +70,36 @@ public class ReadSheet extends MainClass{
         this.name = name;
     }
 
-    public String getClss() {
-        return clss;
-    }
-
     public void setClss(String clss) {
         this.clss = clss;
-    }
-
-    public String getRace() {
-        return race;
     }
 
     public void setRace(String race) {
         this.race = race;
     }
 
-    public int getLevel() {
-        return level;
-    }
-
     public void setLevel(int level) {
         this.level = level;
-    }
-
-    public int getStr() {
-        return str;
     }
 
     public void setStr(int str) {
         this.str = str;
     }
 
-    public int getDex() {
-        return dex;
-    }
-
     public void setDex(int dex) {
         this.dex = dex;
-    }
-
-    public int getCon() {
-        return con;
     }
 
     public void setCon(int con) {
         this.con = con;
     }
 
-    public int getIntl() {
-        return intl;
-    }
-
     public void setIntl(int intl) {
         this.intl = intl;
     }
 
-    public int getWis() {
-        return wis;
-    }
-
     public void setWis(int wis) {
         this.wis = wis;
-    }
-
-    public int getCha() {
-        return cha;
     }
 
     public void setCha(int cha) {
@@ -126,16 +128,17 @@ public class ReadSheet extends MainClass{
                 int chaVal = (int) sheet.getRow(9).getCell(1).getNumericCellValue();
 
 
-//                name = nameVal;
-//                clss = classVal;
-//                level = lvlVal;
-//                race = raceVal;
-//                str = strVal;
-//                dex = dexVal;
-//                con = conVal;
-//                intl = intVal;
-//                wis = wisVal;
-//                cha = chaVal;
+
+                setName(nameVal);
+                setLevel(lvlVal);
+                setClss(classVal);
+                setRace(raceVal);
+                setStr(strVal);
+                setDex(dexVal);
+                setCon(conVal);
+                setIntl(intVal);
+                setCha(chaVal);
+
 
 
             } catch (Exception e) {
