@@ -137,6 +137,7 @@ public class ReadSheet{
                 setDex(dexVal);
                 setCon(conVal);
                 setIntl(intVal);
+                setWis(wisVal);
                 setCha(chaVal);
 
 

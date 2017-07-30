@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 
 public class MainClass extends Application {
 
@@ -20,8 +22,6 @@ public class MainClass extends Application {
         primaryStage.setTitle("PATHFINDER COMPANION");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-
-
 
 
     }
